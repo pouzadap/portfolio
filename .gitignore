@@ -1,0 +1,12 @@
+# raw source videos (~37 MB each) — compressed versions will live in public/
+briefing/refs/videos/
+
+node_modules/
+.next/
+out/
+.vercel
+.env*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,3 @@
+quero um design minimalista como o que eu botei em minimalism.png, eu gostei desse porque ao scrollar, ao invés de scrollar a tela em si, o elemento 3d que simula camadas na direita é animado para passar em todas etapas, e o texto aparece com fade in e fade out, isso remove aquela sensação chata de scrollar um site estático. poderia ser usado na seção que descreve minhas experiências e habilidades ou algo do tipo.
+
+gostei do introduction.png porque já diz no hero quem a pessoa é e o que faz, e tem uma animação de uns efeitos de cor bem contrastante com o fundo que segue o mouse e quando mais mexe o mouse, mais forte fica esse efeito, tipo um glow dinâmico e fluido.
