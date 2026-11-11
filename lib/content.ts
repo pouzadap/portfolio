@@ -31,8 +31,11 @@ export const deckVideos = [
 ];
 
 /**
- * Workflow module demo (16:9). Set to true after dropping the raw file in
+ * Workflow module demo (landscape). Set to true after dropping the raw file in
  * briefing/refs/videos/workflows.mp4 and running `npm run videos`.
  * While false, the section shows an animated mock of the editor.
  */
-export const hasWorkflowVideo = false;
+export const hasWorkflowVideo = true;
+
+/** Width / height of the workflow recording (3840×1928). The frame takes this shape so nothing gets cropped. */
+export const workflowVideoRatio = 3840 / 1928;

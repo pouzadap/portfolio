@@ -217,13 +217,14 @@ html.lenis, html.lenis body { height: auto; }
 .auto-sub { margin: 0; color: var(--ash); font-size: var(--step--1); }
 .auto-frame {
   position: absolute; left: 50%; top: 50%;
-  width: min(calc(100vw - 32px), 1000px, calc((100svh - 240px) * 16 / 9)); aspect-ratio: 16 / 9; max-width: 100%;
+  --ar: 1.7778;
+  width: min(calc(100vw - 32px), 1100px, calc((100svh - 240px) * var(--ar))); aspect-ratio: var(--ar); max-width: 100%;
   transform: translate(-50%, -50%); will-change: transform, opacity; opacity: 0;
   border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #0d0c0b;
   box-shadow: 0 60px 120px -40px rgba(255, 91, 20, 0.28), 0 0 0 1px rgba(255, 91, 20, 0.06);
   display: flex; flex-direction: column;
 }
-.auto-frame video { width: 100%; height: 100%; object-fit: cover; }
+.auto-frame video { width: 100%; height: 100%; object-fit: cover; background: #111; }
 .wf-bar {
   display: flex; justify-content: space-between; padding: 10px 14px; border-bottom: 1px solid var(--line);
   font-size: 0.7rem; color: var(--ash); letter-spacing: 0.08em;

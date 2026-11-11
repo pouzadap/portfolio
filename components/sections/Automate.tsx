@@ -1,8 +1,8 @@
 'use client';
 
-import { useCallback, useRef } from 'react';
+import { useCallback, useRef, type CSSProperties } from 'react';
 import { LazyVideo } from '@/components/LazyVideo';
-import { hasWorkflowVideo } from '@/lib/content';
+import { hasWorkflowVideo, workflowVideoRatio } from '@/lib/content';
 import { ease, lerp, usePinnedProgress } from '@/lib/hooks';
 import { useI18n } from '@/lib/i18n';
 
@@ -60,7 +60,11 @@ export function Automate() {
           </span>
           <p className="auto-sub">{t.automate.sub}</p>
         </div>
-        <div className="auto-frame" ref={frame}>
+        <div
+          className="auto-frame"
+          ref={frame}
+          style={{ '--ar': hasWorkflowVideo ? workflowVideoRatio : 16 / 9 } as CSSProperties}
+        >
           {hasWorkflowVideo ? (
             <LazyVideo src="/videos/workflows.mp4" poster="/videos/workflows.jpg" />
           ) : (
